@@ -1,4 +1,4 @@
-import MyImage from '../assets/Banco-removebg-preview.webp';
+import MyImage from '../assets/Banco-removebg-preview.webp'
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 
@@ -21,7 +21,7 @@ function Header() {
             </svg>
           </button>
           <a className="flex items-center justify-center select-none" href="/">
-            <img src="/assets/Banco-removebg-preview.webp" alt="logo-banco.webp" width="75px" />
+            <img src={MyImage} alt="logo-banco.webp" width="75px" />
             <h1 className="text-2xl font-bold self-start mt-3">Horizon</h1>
           </a>
         </div>

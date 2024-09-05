@@ -1,20 +1,18 @@
 import React from 'react';
-import heroImage from '../assets/slider2.jpg'; 
+import heroImage from '../assets/slider1.jpg'; // Ajusta la ruta según la ubicación de tu archivo
 
 function Main() {
   return (
     <main className="flex flex-col mt-20 p-6 bg-gray-50 min-h-screen">
       {/* Hero Section */}
-      <section 
-        className="relative bg-gray-900 py-24 sm:py-32 rounded-sm bg-cover bg-center" 
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
+      <section className="relative bg-gray-900 py-24 sm:py-32 rounded-sm bg-cover bg-center" style={{ backgroundImage: `url(${heroImage})` }}>
+        <div className="absolute inset-0 bg-black opacity-50"></div> {/* Overlay */}
         <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+            <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl relative">
               Pedi tu tarjeta
             </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
+            <p className="mt-6 text-lg leading-8 text-gray-300 relative">
               ¡Con tu tarjeta aprovecha al máximo tus compras semanales y
               obtén increíbles recompensas!
               <br />
